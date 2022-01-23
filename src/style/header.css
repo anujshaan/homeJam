@@ -1,0 +1,29 @@
+.headerWrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerWrapper .logo{
+    cursor: pointer;
+}
+.headerWrapper nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28%;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.headerWrapper nav .navSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+}
+.headerWrapper nav span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
