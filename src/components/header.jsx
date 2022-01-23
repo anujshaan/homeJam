@@ -8,7 +8,7 @@ const Header = () => {
       <div className="headerLogo">
         <img src={logo} alt="" className='logo'/>
       </div>
-      <nav>
+      <nav className='pcView'>
         <span className="navSearch">
           <i className="far fa-search"></i>
           <span>Search</span>
@@ -18,6 +18,11 @@ const Header = () => {
         <span>
           <img src={basket} alt="" />
         </span>
+      </nav>
+      <nav className='mobileView'>
+          <i className="far fa-search"></i>
+          <img src={basket} alt="" />
+          <i class="far fa-bars"></i>
       </nav>
     </div>)
 };

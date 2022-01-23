@@ -8,7 +8,7 @@
 .headerWrapper .logo{
     cursor: pointer;
 }
-.headerWrapper nav{
+.headerWrapper .pcView{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,14 +16,18 @@
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-.headerWrapper nav .navSearch{
+
+.headerWrapper .pcView .navSearch{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 24%;
 }
-.headerWrapper nav span{
+.headerWrapper .pcView span{
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.headerWrapper .mobileView{
+    display: none;
 }

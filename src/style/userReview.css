@@ -1,6 +1,6 @@
 .userReviewWrapper{
-    padding: 0 10%;
-    height: 60vh;
+    padding: 2rem 10%;
+    height: 100%;
     background: #000;
     color: #fff;
 }
@@ -35,12 +35,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .reviewCardWrapper{
     width: 360px;
     height: 248px;
     border-radius: 16px;
     position: relative;
+    margin: 2rem 0;
 }
 .reviewCardWrapper .reviewCardShadow{
     width: 100%;

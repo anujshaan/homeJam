@@ -27,3 +27,7 @@
 
 /*------------header css---------*/
 @import url('./userReview.css');
+
+
+/*------------Responsive css---------*/
+@import url('./responsive.css');
