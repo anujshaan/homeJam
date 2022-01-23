@@ -1,13 +1,25 @@
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-const data = [
-  { name: "Group A", value: 40 },
-  { name: "Group B", value: 60 },
-];
-const COLORS = ["#808080", "#e75480"];
+// const data = [
+//   { name: "Group A", value: 40 },
+//   { name: "Group B", value: 60 },
+// ];
 
-const HomeStats = () => {
+const HomeStats = ({statsData}) => {
+  
+  const COLORS = ["#808080", "#e75480"];
+
+  const data = [
+    {
+      name:'Group A',
+      value:(100 - statsData.value)
+    },
+    {
+      name:'Group B',
+      value:statsData.value
+    },
+  ];
   return (
     <div className="piechartContainer">
       <PieChart width={208} height={208} className="piechart">
@@ -27,7 +39,7 @@ const HomeStats = () => {
         </Pie>
       </PieChart>
       <div className="piechartLabel">
-        <i class="far fa-heart" style={{fontSize:'24px', color:'#0259EB'}}></i>
+        <img src={statsData.icon} alt="" />
         <p style={{fontSize:'24px', fontFamily:'Libre Baskerville'}}>0</p>
         <p style={{fontSize:'16px', fontFamily:'Nunito'}}>Label</p>
       </div>

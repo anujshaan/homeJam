@@ -1,7 +1,32 @@
 import React from 'react';
 import Header from '../components/header';
+import Like from '../Assets/icons/Like.png';
+import Calendar from '../Assets/icons/Calendar.png';
 
 import HomeStats from '../components/homeStats';
+
+const statsData = [
+  {
+    value:60,
+    title:'label',
+    icon:Like,
+  },
+  {
+    value:0,
+    title:'label',
+    icon:Calendar,
+  },
+  {
+    value:0,
+    title:'label',
+    icon:Calendar,
+  },
+  {
+    value:0,
+    title:'label',
+    icon:Calendar,
+  },
+]
 
 const Home = () => {
   return (
@@ -16,10 +41,10 @@ const Home = () => {
         </div>
 
         <div className="homeStats">
-          <HomeStats />
-          <HomeStats />
-          <HomeStats />
-          <HomeStats />
+          <HomeStats statsData={statsData[0]}/>
+          <HomeStats statsData={statsData[1]}/>
+          <HomeStats statsData={statsData[2]}/>
+          <HomeStats statsData={statsData[3]}/>
         </div>
     </div>
   );
